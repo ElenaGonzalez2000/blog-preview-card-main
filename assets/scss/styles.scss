@@ -1,0 +1,76 @@
+@import "variables";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Figtree", sans-serif;
+}
+body {
+  background-color: $Yellow;
+}
+h1 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  cursor: pointer;
+  &:hover{
+    color: $Yellow;
+  }
+}
+span {
+  font-size: 0.7rem;
+  color: $Black;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    padding: 1.3rem;
+    background-color: $White;
+    border: 1px solid $Black;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem $Black;
+    .container__card{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 15rem;
+            border-radius: 0.5rem;
+        }
+        .card__label{
+            background-color: $Yellow;
+            width: min-content;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.3rem;
+            font-weight: 800;
+            margin-top: 1rem;
+        }
+        .card__date{
+            font-weight: 600;
+            margin: 0.5rem 0rem;
+        }
+        .card__info{
+            font-size: 0.8rem;
+            color: $Grey;
+            margin: 1rem 0rem;
+        }
+        .container__user{
+            display: flex;
+            align-items: center;
+            img{
+                width: 2rem;
+                margin-right: 0.5rem;
+            }
+            span{
+                font-size: 0.8rem;
+                font-weight: 800;
+            }
+        }
+    }
+  }
+}

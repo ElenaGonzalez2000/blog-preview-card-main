@@ -12,6 +12,7 @@ h1 {
   font-size: 1.1rem;
   font-weight: 800;
   cursor: pointer;
+  transition: 0.2s;
 }
 h1:hover {
   color: hsl(47, 88%, 63%);
@@ -26,27 +27,24 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
-.main .container {
+.main .card {
   display: flex;
   flex-direction: column;
-  width: min-content;
+  max-width: 13rem;
   padding: 1.3rem;
   background-color: hsl(0, 0%, 100%);
   border: 1px solid hsl(0, 0%, 7%);
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem hsl(0, 0%, 7%);
+  margin: 0.5rem;
 }
-.main .container .container__card {
-  display: flex;
-  flex-direction: column;
-}
-.main .container .container__card img {
-  width: 15rem;
+.main .card img {
+  max-width: 100%;
   border-radius: 0.5rem;
 }
-.main .container .container__card .card__label {
+.main .card .card__label {
   background-color: hsl(47, 88%, 63%);
   width: min-content;
   padding: 0.2rem 0.5rem;
@@ -54,24 +52,25 @@ span {
   font-weight: 800;
   margin-top: 1rem;
 }
-.main .container .container__card .card__date {
+.main .card .card__date {
   font-weight: 600;
   margin: 0.5rem 0rem;
 }
-.main .container .container__card .card__info {
+.main .card .card__info {
   font-size: 0.8rem;
   color: hsl(0, 0%, 50%);
   margin: 1rem 0rem;
 }
-.main .container .container__card .container__user {
+.main .card .card__user {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
-.main .container .container__card .container__user img {
-  width: 2rem;
+.main .card .card__user img {
+  max-width: 2rem;
   margin-right: 0.5rem;
 }
-.main .container .container__card .container__user span {
+.main .card .card__user span {
   font-size: 0.8rem;
   font-weight: 800;
 }

@@ -34,7 +34,7 @@ span {
   flex-direction: column;
   max-width: 13rem;
   padding: 1.3rem;
-  margin: 1rem 0.5rem;
+  margin: 1rem;
   background-color: hsl(0, 0%, 100%);
   border: 1px solid hsl(0, 0%, 7%);
   border-radius: 1rem;
